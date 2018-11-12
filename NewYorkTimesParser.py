@@ -3,7 +3,7 @@ import json
 from bs4 import BeautifulSoup
 import os
 PATH = "./"
-URLLIST_PATH = "./urlList.txt"
+URLLIST_PATH = "./urlList.txt" # You may get this file by using NYTimes API. It is saved like ["https://nytimes.com/xxx", "https://nytimes.com/xxx"...]
 with open(PATH+r"cookie.txt", "r") as file:
     cookie = file.read()
 cookie = json.loads(cookie)[-1]
